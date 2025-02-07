@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "tdd-angular": {
+    "unit-testing-angular": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/tdd-angular",
+            "outputPath": "dist/unit-testing-angular",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -59,10 +59,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "tdd-angular:build:production"
+              "buildTarget": "unit-testing-angular:build:production"
             },
             "development": {
-              "buildTarget": "tdd-angular:build:development"
+              "buildTarget": "unit-testing-angular:build:development"
             }
           },
           "defaultConfiguration": "development"
