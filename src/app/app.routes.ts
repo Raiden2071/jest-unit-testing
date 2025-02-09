@@ -1,11 +1,12 @@
 import { Routes } from '@angular/router';
 import { TodosComponent } from './todos/todos.component';
+import { PostsComponent } from './posts/posts.component';
 
 export const routes: Routes = [
-  // {
-  //   path: 'ngrx', component: ,
-  // },
   {
-    path: '*', component: TodosComponent,
+    path: 'posts', component: PostsComponent,
+  },
+  {
+    path: 'todos', component: TodosComponent,
   }
 ];

@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TodosComponent } from './todos/todos.component';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [CommonModule, TodosComponent],
+  imports: [CommonModule, RouterModule],
   standalone: true,
   templateUrl: './app.component.html',
 })
